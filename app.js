@@ -9,11 +9,11 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
   res.render('formTemplate');
 });
 
-app.post('/hello', (req, res) => {
+app.post('/', (req, res) => {
   res.send(`<h1>Hola ${req.body.username}!</h1>`);
 });
 
