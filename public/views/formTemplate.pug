@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  div.container
+    form(class="form-hello" method="POST" action="/hello")
+      label(for="name") Email address
+      input(type="text" name="username" placeholder="Your name here!")
+      button(class="button-form" type="submit") Enviar
