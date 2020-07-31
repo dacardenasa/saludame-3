@@ -4,6 +4,7 @@ const port = 3000;
 
 app.set('view engine','pug');
 app.set('views', './public/views');
+app.use(express.static('public'));
 app.use(express.urlencoded({
   extended: true
 }));
