@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-// const port = 3000;
+const port = 3000;
 
 app.set('view engine','pug');
 app.set('views', './public/views');
@@ -14,8 +14,7 @@ app.get('/hello', (req, res) => {
 });
 
 app.post('/hello', (req, res) => {
-  res.send(`Hola ${req.body.username}!`);
-  // res.end();
+  res.send(`<h1>Hola ${req.body.username}!</h1>`);
 });
 
-app.listen(3000, () => console.log('Listening on port 3000!'));
+app.listen(port, () => console.log('Listening on port 3000!'));
