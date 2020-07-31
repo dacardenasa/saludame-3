@@ -4,14 +4,13 @@ const port = 3000;
 
 app.set('view engine','pug');
 app.set('views', './public/views');
+app.use(express.urlencoded({
+  extended: true
+}));
 
 app.get('/hello', (req, res) => {
   res.render('formTemplate');
 });
-
-app.use(express.urlencoded({
-  extended: true
-}));
 
 app.post('/hello', (req, res) => {
   res.send(`Hola ${req.body.username}!`);
