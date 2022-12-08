@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/dacardenasa/saludame-3#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "pug": "^3.0.0"
